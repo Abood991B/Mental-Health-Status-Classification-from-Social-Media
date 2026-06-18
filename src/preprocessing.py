@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+from functools import lru_cache
 from pathlib import Path
 from typing import Iterable
 
@@ -21,6 +22,7 @@ RANDOM_STATE = 42
 NEGATION_WORDS = {"no", "not"}
 
 
+@lru_cache(maxsize=1)
 def ensure_nltk_resources() -> None:
     """Download small NLTK resources required by the preprocessing notebooks."""
     resources = [
@@ -36,6 +38,19 @@ def ensure_nltk_resources() -> None:
             nltk.data.find(resource_path)
         except LookupError:
             nltk.download(package, quiet=True)
+
+
+@lru_cache(maxsize=2)
+def _stop_words(keep_negations: bool = True) -> frozenset[str]:
+    stop_words = set(stopwords.words("english"))
+    if keep_negations:
+        stop_words = stop_words.difference(NEGATION_WORDS)
+    return frozenset(stop_words)
+
+
+@lru_cache(maxsize=1)
+def _lemmatizer() -> WordNetLemmatizer:
+    return WordNetLemmatizer()
 
 
 def load_raw_dataset(path: str | Path) -> pd.DataFrame:
@@ -65,11 +80,8 @@ def clean_text(text: str, keep_negations: bool = True) -> str:
         nltk.download("punkt_tab", quiet=True)
         tokens = word_tokenize(normalized)
 
-    stop_words = set(stopwords.words("english"))
-    if keep_negations:
-        stop_words = stop_words.difference(NEGATION_WORDS)
-
-    lemmatizer = WordNetLemmatizer()
+    stop_words = _stop_words(keep_negations)
+    lemmatizer = _lemmatizer()
     cleaned_tokens = []
     for token in tokens:
         token = re.sub(r"[^a-z]", "", token)

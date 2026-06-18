@@ -10,6 +10,11 @@ models/*.pkl
 models/*.joblib
 models/*.keras
 models/*.pt
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.keras
+models/**/*.pt
 models/transformers/
 results/cache/
+results/tables/vader_scores_full.csv
 data/processed/

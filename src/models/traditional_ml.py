@@ -12,7 +12,6 @@ def build_traditional_models() -> dict:
             C=1.0,
             max_iter=1000,
             solver="lbfgs",
-            multi_class="multinomial",
             class_weight="balanced",
             n_jobs=None,
         ),

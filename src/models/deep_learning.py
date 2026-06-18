@@ -19,7 +19,6 @@ def build_bilstm_model(vocab_size: int, embedding_dim: int, num_classes: int, em
         vocab_size,
         embedding_dim,
         weights=[embedding_matrix] if embedding_matrix is not None else None,
-        input_length=max_len,
         trainable=False if embedding_matrix is not None else True,
     )
     model = tf.keras.Sequential(
@@ -43,7 +42,6 @@ def build_cnn_model(vocab_size: int, embedding_dim: int, num_classes: int, embed
         vocab_size,
         embedding_dim,
         weights=[embedding_matrix] if embedding_matrix is not None else None,
-        input_length=max_len,
         trainable=False if embedding_matrix is not None else True,
     )
     model = tf.keras.Sequential(
@@ -67,7 +65,6 @@ def build_gru_model(vocab_size: int, embedding_dim: int, num_classes: int, embed
         vocab_size,
         embedding_dim,
         weights=[embedding_matrix] if embedding_matrix is not None else None,
-        input_length=max_len,
         trainable=False if embedding_matrix is not None else True,
     )
     model = tf.keras.Sequential(

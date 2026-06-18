@@ -44,7 +44,7 @@ def save_text_length_distribution(df: pd.DataFrame, output_path: str | Path) -> 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     fig, ax = plt.subplots(figsize=(11, 6))
     sns.histplot(data=df, x="text_length_chars", hue=LABEL_COLUMN, bins=60, log_scale=(False, True), element="step", ax=ax)
-    ax.set_title("Raw Text Length Distribution by Class")
+    ax.set_title("Raw Text Length Distribution by Class (Final Modelling Rows)")
     ax.set_xlabel("Characters per post")
     ax.set_ylabel("Number of posts (log scale)")
     plt.tight_layout()
@@ -61,7 +61,7 @@ def save_wordcloud_grid(df: pd.DataFrame, output_path: str | Path) -> None:
     axes = axes.ravel()
     for ax, label in zip(axes, labels):
         text = join_texts(df.loc[df[LABEL_COLUMN] == label, "clean_text"])
-        cloud = WordCloud(width=900, height=500, background_color="white", colormap="viridis", max_words=120).generate(text)
+        cloud = WordCloud(width=900, height=500, background_color="white", colormap="viridis", max_words=120, random_state=42).generate(text)
         ax.imshow(cloud, interpolation="bilinear")
         ax.set_title(label)
         ax.axis("off")

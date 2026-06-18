@@ -1,0 +1,71 @@
+status,aspect,mentions_per_10k_tokens
+Anxiety,sleep,32.37376298048937
+Anxiety,energy,8.149775599496742
+Anxiety,motivation,4.619458058700918
+Anxiety,appetite,33.12489437214805
+Anxiety,concentration,8.938463560738363
+Anxiety,social_support,37.293673595853754
+Anxiety,medication,19.792312170206372
+Anxiety,therapy,58.7009182581263
+Anxiety,self_harm,5.145250032861998
+Anxiety,hopelessness,85.14074324451205
+Bipolar,sleep,40.278980403306754
+Bipolar,energy,14.38842722428284
+Bipolar,motivation,9.391248906867244
+Bipolar,appetite,23.004251909482146
+Bipolar,concentration,12.062154559279026
+Bipolar,social_support,65.95413796520069
+Bipolar,medication,47.559352262300166
+Bipolar,therapy,43.251439919700516
+Bipolar,self_harm,21.884194700406237
+Bipolar,hopelessness,59.92306068556117
+Depression,sleep,38.19614950413349
+Depression,energy,11.196441438476946
+Depression,motivation,12.251117534791653
+Depression,appetite,20.477591086046385
+Depression,concentration,10.091140889539131
+Depression,social_support,128.73798302055857
+Depression,medication,16.60482046037877
+Depression,therapy,29.007811353039745
+Depression,self_harm,34.68618745559814
+Depression,hopelessness,124.31678082480734
+Normal,sleep,37.891859807020694
+Normal,energy,1.5874549645928524
+Normal,motivation,3.9341275209475035
+Normal,appetite,21.87927059895366
+Normal,concentration,7.109037450133208
+Normal,social_support,62.18682274339826
+Normal,medication,7.3160967933409715
+Normal,therapy,12.975718841019836
+Normal,self_harm,4.417265988432285
+Normal,hopelessness,30.161644327264195
+Personality disorder,sleep,11.970340157166135
+Personality disorder,energy,6.76102545914013
+Personality disorder,motivation,7.758553805570641
+Personality disorder,appetite,8.64524566906443
+Personality disorder,concentration,9.421101049621493
+Personality disorder,social_support,144.86328319829755
+Personality disorder,medication,6.650188976203408
+Personality disorder,therapy,30.14752335878878
+Personality disorder,self_harm,7.426044356760471
+Personality disorder,hopelessness,84.1248905489731
+Stress,sleep,34.506704466542104
+Stress,energy,8.519290106884874
+Stress,motivation,8.877243472720375
+Stress,appetite,26.846502437662423
+Stress,concentration,15.391994730926456
+Stress,social_support,82.90199952750156
+Stress,medication,10.595419628730768
+Stress,therapy,23.62492214514293
+Stress,self_harm,7.8749740483809765
+Stress,hopelessness,67.0804607575725
+Suicidal,sleep,43.26403583809824
+Suicidal,energy,7.203637837107739
+Suicidal,motivation,7.077011390752331
+Suicidal,appetite,13.88670028364324
+Suicidal,concentration,7.991535725541398
+Suicidal,social_support,125.14913781459637
+Suicidal,medication,15.926793030480392
+Suicidal,therapy,19.655238395389674
+Suicidal,self_harm,96.23609923011121
+Suicidal,hopelessness,149.95385169510604

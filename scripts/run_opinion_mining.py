@@ -38,7 +38,7 @@ DOMAIN_ASPECTS = {
 def save_vader_distribution(df: pd.DataFrame) -> None:
     setup_style()
     fig, ax = plt.subplots(figsize=(12, 6))
-    sns.violinplot(data=df, x="status", y="vader_compound", ax=ax, palette=PALETTE, cut=0)
+    sns.violinplot(data=df, x="status", y="vader_compound", hue="status", ax=ax, palette=PALETTE, cut=0, legend=False)
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_title("VADER Compound Sentiment Distribution by Mental Health Class")
     ax.set_xlabel("Mental health status")

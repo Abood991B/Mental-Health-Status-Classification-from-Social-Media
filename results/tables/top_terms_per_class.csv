@@ -1,6 +1,6 @@
 status,term,count
 Anxiety,anxiety,3747
-Anxiety,like,3289
+Anxiety,like,3290
 Anxiety,nt,3196
 Anxiety,feel,2800
 Anxiety,not,2750
@@ -16,7 +16,7 @@ Bipolar,not,2634
 Bipolar,get,1933
 Bipolar,know,1858
 Bipolar,bipolar,1856
-Bipolar,time,1829
+Bipolar,time,1830
 Bipolar,year,1525
 Bipolar,really,1494
 Depression,not,44995
@@ -30,7 +30,7 @@ Depression,time,9551
 Depression,even,9173
 Depression,no,8746
 Normal,nt,2209
-Normal,not,1730
+Normal,not,1731
 Normal,like,1273
 Normal,want,1223
 Normal,time,930
@@ -39,14 +39,14 @@ Normal,really,860
 Normal,go,805
 Normal,one,803
 Normal,know,786
-Personality disorder,like,1707
+Personality disorder,like,1708
 Personality disorder,nt,1653
 Personality disorder,feel,1281
 Personality disorder,people,1253
 Personality disorder,not,1231
 Personality disorder,know,828
 Personality disorder,even,795
-Personality disorder,time,684
+Personality disorder,time,685
 Personality disorder,get,672
 Personality disorder,want,669
 Stress,nt,2081

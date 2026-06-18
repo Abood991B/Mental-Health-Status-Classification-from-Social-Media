@@ -1,8 +1,8 @@
 ,Anxiety,Bipolar,Depression,Normal,Personality disorder,Stress,Suicidal
-Anxiety,457,40,12,2,32,32,1
+Anxiety,459,39,11,2,32,32,1
 Bipolar,16,341,15,0,25,14,5
-Depression,94,190,1219,20,117,52,619
-Normal,237,202,150,1028,332,301,182
-Personality disorder,5,8,3,0,139,5,1
-Stress,58,43,26,1,43,201,16
-Suicidal,18,36,290,15,39,20,1180
+Depression,95,189,1213,21,120,49,624
+Normal,241,196,149,1030,332,301,183
+Personality disorder,5,8,3,0,140,4,1
+Stress,57,45,25,1,43,200,17
+Suicidal,18,36,290,15,39,22,1178

@@ -1,0 +1,201 @@
+status,aspect,sentiment,count
+Anxiety,appetite,negative,344
+Anxiety,appetite,positive,85
+Anxiety,appetite,neutral,2
+Anxiety,concentration,negative,146
+Anxiety,concentration,positive,55
+Anxiety,energy,negative,134
+Anxiety,energy,positive,30
+Anxiety,hopelessness,negative,924
+Anxiety,hopelessness,positive,191
+Anxiety,hopelessness,neutral,8
+Anxiety,medication,negative,262
+Anxiety,medication,positive,64
+Anxiety,medication,neutral,3
+Anxiety,motivation,negative,80
+Anxiety,motivation,positive,18
+Anxiety,motivation,neutral,1
+Anxiety,self_harm,negative,86
+Anxiety,self_harm,positive,12
+Anxiety,sleep,negative,461
+Anxiety,sleep,positive,88
+Anxiety,sleep,neutral,10
+Anxiety,social_support,negative,404
+Anxiety,social_support,positive,171
+Anxiety,social_support,neutral,4
+Anxiety,therapy,negative,725
+Anxiety,therapy,positive,191
+Anxiety,therapy,neutral,5
+Bipolar,appetite,negative,149
+Bipolar,appetite,positive,119
+Bipolar,appetite,neutral,6
+Bipolar,concentration,negative,128
+Bipolar,concentration,positive,66
+Bipolar,concentration,neutral,1
+Bipolar,energy,negative,157
+Bipolar,energy,positive,85
+Bipolar,energy,neutral,4
+Bipolar,hopelessness,negative,503
+Bipolar,hopelessness,positive,314
+Bipolar,hopelessness,neutral,6
+Bipolar,medication,negative,383
+Bipolar,medication,positive,254
+Bipolar,medication,neutral,20
+Bipolar,motivation,negative,97
+Bipolar,motivation,positive,77
+Bipolar,motivation,neutral,3
+Bipolar,self_harm,negative,254
+Bipolar,self_harm,positive,76
+Bipolar,self_harm,neutral,3
+Bipolar,sleep,negative,360
+Bipolar,sleep,positive,180
+Bipolar,sleep,neutral,5
+Bipolar,social_support,negative,446
+Bipolar,social_support,positive,309
+Bipolar,social_support,neutral,6
+Bipolar,therapy,negative,356
+Bipolar,therapy,positive,229
+Bipolar,therapy,neutral,5
+Depression,appetite,negative,997
+Depression,appetite,positive,456
+Depression,appetite,neutral,10
+Depression,concentration,negative,646
+Depression,concentration,positive,295
+Depression,concentration,neutral,6
+Depression,energy,negative,731
+Depression,energy,positive,304
+Depression,energy,neutral,5
+Depression,hopelessness,negative,4848
+Depression,hopelessness,positive,2025
+Depression,hopelessness,neutral,78
+Depression,medication,negative,950
+Depression,medication,positive,388
+Depression,medication,neutral,16
+Depression,motivation,negative,707
+Depression,motivation,positive,391
+Depression,motivation,neutral,9
+Depression,self_harm,negative,2214
+Depression,self_harm,positive,549
+Depression,self_harm,neutral,19
+Depression,sleep,negative,2078
+Depression,sleep,positive,705
+Depression,sleep,neutral,26
+Depression,social_support,negative,4090
+Depression,social_support,positive,2039
+Depression,social_support,neutral,58
+Depression,therapy,negative,1539
+Depression,therapy,positive,636
+Depression,therapy,neutral,22
+Normal,appetite,positive,127
+Normal,appetite,negative,70
+Normal,appetite,neutral,62
+Normal,concentration,positive,59
+Normal,concentration,negative,23
+Normal,concentration,neutral,11
+Normal,energy,positive,12
+Normal,energy,negative,8
+Normal,energy,neutral,3
+Normal,hopelessness,positive,204
+Normal,hopelessness,negative,162
+Normal,hopelessness,neutral,29
+Normal,medication,positive,40
+Normal,medication,negative,35
+Normal,medication,neutral,15
+Normal,motivation,positive,26
+Normal,motivation,negative,23
+Normal,motivation,neutral,5
+Normal,self_harm,negative,54
+Normal,self_harm,positive,6
+Normal,sleep,negative,240
+Normal,sleep,positive,156
+Normal,sleep,neutral,89
+Normal,social_support,positive,494
+Normal,social_support,negative,179
+Normal,social_support,neutral,31
+Normal,therapy,positive,80
+Normal,therapy,negative,51
+Normal,therapy,neutral,24
+Personality disorder,appetite,negative,30
+Personality disorder,appetite,positive,21
+Personality disorder,concentration,negative,36
+Personality disorder,concentration,positive,25
+Personality disorder,energy,negative,33
+Personality disorder,energy,positive,16
+Personality disorder,energy,neutral,1
+Personality disorder,hopelessness,negative,223
+Personality disorder,hopelessness,positive,154
+Personality disorder,hopelessness,neutral,4
+Personality disorder,medication,negative,20
+Personality disorder,medication,positive,17
+Personality disorder,motivation,negative,33
+Personality disorder,motivation,positive,19
+Personality disorder,motivation,neutral,2
+Personality disorder,self_harm,negative,36
+Personality disorder,self_harm,positive,8
+Personality disorder,sleep,negative,51
+Personality disorder,sleep,positive,29
+Personality disorder,sleep,neutral,2
+Personality disorder,social_support,negative,245
+Personality disorder,social_support,positive,222
+Personality disorder,social_support,neutral,6
+Personality disorder,therapy,negative,72
+Personality disorder,therapy,positive,65
+Personality disorder,therapy,neutral,1
+Stress,appetite,negative,150
+Stress,appetite,positive,73
+Stress,appetite,neutral,2
+Stress,concentration,negative,91
+Stress,concentration,positive,68
+Stress,concentration,neutral,2
+Stress,energy,negative,73
+Stress,energy,positive,31
+Stress,energy,neutral,1
+Stress,hopelessness,negative,394
+Stress,hopelessness,positive,191
+Stress,hopelessness,neutral,4
+Stress,medication,negative,92
+Stress,medication,positive,29
+Stress,motivation,negative,54
+Stress,motivation,positive,41
+Stress,motivation,neutral,3
+Stress,self_harm,negative,72
+Stress,self_harm,positive,19
+Stress,self_harm,neutral,1
+Stress,sleep,negative,214
+Stress,sleep,positive,90
+Stress,sleep,neutral,4
+Stress,social_support,negative,401
+Stress,social_support,positive,254
+Stress,social_support,neutral,12
+Stress,therapy,negative,173
+Stress,therapy,positive,70
+Stress,therapy,neutral,1
+Suicidal,appetite,negative,522
+Suicidal,appetite,positive,134
+Suicidal,appetite,neutral,8
+Suicidal,concentration,negative,359
+Suicidal,concentration,positive,109
+Suicidal,concentration,neutral,5
+Suicidal,energy,negative,348
+Suicidal,energy,positive,80
+Suicidal,hopelessness,negative,3867
+Suicidal,hopelessness,positive,1116
+Suicidal,hopelessness,neutral,66
+Suicidal,medication,negative,671
+Suicidal,medication,positive,168
+Suicidal,medication,neutral,18
+Suicidal,motivation,negative,322
+Suicidal,motivation,positive,98
+Suicidal,motivation,neutral,10
+Suicidal,self_harm,negative,3405
+Suicidal,self_harm,positive,695
+Suicidal,self_harm,neutral,29
+Suicidal,sleep,negative,1602
+Suicidal,sleep,positive,349
+Suicidal,sleep,neutral,23
+Suicidal,social_support,negative,2991
+Suicidal,social_support,positive,970
+Suicidal,social_support,neutral,31
+Suicidal,therapy,negative,783
+Suicidal,therapy,positive,181
+Suicidal,therapy,neutral,6
