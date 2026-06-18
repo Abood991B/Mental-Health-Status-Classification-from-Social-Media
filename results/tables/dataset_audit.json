@@ -1,0 +1,16 @@
+{
+  "raw_rows": 53043,
+  "null_statements": 362,
+  "rows_after_null_removal": 52681,
+  "empty_after_cleaning": 138,
+  "final_modelling_rows": 52543,
+  "avg_text_length_chars_after_null": 578.71,
+  "median_text_length_chars_after_null": 317,
+  "max_text_length_chars_after_null": 32759,
+  "avg_word_count_after_null": 113.16,
+  "median_word_count_after_null": 62,
+  "max_word_count_after_null": 6300,
+  "train_rows": 36780,
+  "validation_rows": 7881,
+  "test_rows": 7882
+}

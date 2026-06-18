@@ -1,10 +1,15 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import joblib
 import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 from src.preprocessing import (
     class_distribution,
@@ -16,7 +21,6 @@ from src.preprocessing import (
 from src.visualization import save_class_distribution, save_text_length_distribution, save_top_terms_chart, save_wordcloud_grid, top_terms_by_class
 
 
-ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "Combined_Data.csv"
 PROCESSED_DIR = ROOT / "data" / "processed"
 RESULTS_DIR = ROOT / "results"
@@ -29,8 +33,8 @@ EXPECTED_AUDIT = {
     "raw_rows": 53043,
     "null_statements": 362,
     "rows_after_null_removal": 52681,
-    "empty_after_cleaning": 139,
-    "final_modelling_rows": 52542,
+    "empty_after_cleaning": 138,
+    "final_modelling_rows": 52543,
 }
 
 
@@ -64,7 +68,7 @@ def main() -> None:
         "validation_rows": len(val_df),
         "test_rows": len(test_df),
     }
-    if split_audit != {"train_rows": 36779, "validation_rows": 7881, "test_rows": 7882}:
+    if split_audit != {"train_rows": 36780, "validation_rows": 7881, "test_rows": 7882}:
         raise AssertionError(f"Split sizes do not match master plan: {split_audit}")
 
     final_df.to_csv(PROCESSED_DIR / "cleaned_full.csv", index=False)

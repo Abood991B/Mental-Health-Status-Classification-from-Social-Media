@@ -18,7 +18,7 @@ LABEL_COLUMN = "status"
 RANDOM_STATE = 42
 
 
-NEGATION_WORDS = {"no", "nor", "not", "never", "none", "nobody", "nothing", "nowhere", "neither"}
+NEGATION_WORDS = {"no", "not"}
 
 
 def ensure_nltk_resources() -> None:
@@ -50,8 +50,6 @@ def load_raw_dataset(path: str | Path) -> pd.DataFrame:
 def _basic_normalize(text: str) -> str:
     text = str(text).lower()
     text = re.sub(r"http\S+|www\.\S+", " ", text)
-    text = re.sub(r"@\w+|#\w+", " ", text)
-    text = re.sub(r"[^a-z\s]", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
 
@@ -72,11 +70,11 @@ def clean_text(text: str, keep_negations: bool = True) -> str:
         stop_words = stop_words.difference(NEGATION_WORDS)
 
     lemmatizer = WordNetLemmatizer()
-    cleaned_tokens = [
-        lemmatizer.lemmatize(token)
-        for token in tokens
-        if token.isalpha() and token not in stop_words and len(token) > 1
-    ]
+    cleaned_tokens = []
+    for token in tokens:
+        token = re.sub(r"[^a-z]", "", token)
+        if token and token.isalpha() and token not in stop_words and len(token) > 1:
+            cleaned_tokens.append(lemmatizer.lemmatize(token))
     return " ".join(cleaned_tokens)
 
 

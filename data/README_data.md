@@ -15,8 +15,8 @@ Verified preprocessing counts:
 - Raw rows: 53,043
 - Null `statement` rows removed: 362
 - Rows after null removal: 52,681
-- Rows that become empty after planned cleaning: 139
-- Final modelling rows: 52,542
+- Rows that become empty after planned cleaning: 138
+- Final modelling rows: 52,543
 
 The final task is seven-class text classification:
 

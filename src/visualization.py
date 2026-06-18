@@ -27,7 +27,7 @@ def save_class_distribution(distribution: pd.DataFrame, output_path: str | Path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     ordered = distribution.sort_values("count", ascending=False)
     fig, ax = plt.subplots(figsize=(10, 6))
-    sns.barplot(data=ordered, x="count", y="status", ax=ax, palette=PALETTE)
+    sns.barplot(data=ordered, x="count", y="status", hue="status", ax=ax, palette=PALETTE, legend=False)
     for patch, (_, row) in zip(ax.patches, ordered.iterrows()):
         ax.text(patch.get_width() + 150, patch.get_y() + patch.get_height() / 2, f"{row['count']:,} ({row['percentage']:.2f}%)", va="center")
     ax.set_title("Class Distribution After Final Cleaning")
@@ -78,7 +78,8 @@ def save_metric_bar(results: pd.DataFrame, metric: str, output_path: str | Path,
     output_path.parent.mkdir(parents=True, exist_ok=True)
     ordered = results.sort_values(metric, ascending=False)
     fig, ax = plt.subplots(figsize=(10, 6))
-    sns.barplot(data=ordered, x=metric, y="model", ax=ax, palette=PALETTE)
+    palette = PALETTE[: max(1, len(ordered))]
+    sns.barplot(data=ordered, x=metric, y="model", hue="model", ax=ax, palette=palette, legend=False)
     ax.set_title(title)
     ax.set_xlim(0, max(1.0, float(ordered[metric].max()) + 0.05))
     ax.set_xlabel(metric.replace("_", " ").title())

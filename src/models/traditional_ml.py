@@ -16,5 +16,5 @@ def build_traditional_models() -> dict:
             class_weight="balanced",
             n_jobs=None,
         ),
-        "Linear SVM": LinearSVC(C=1.0, class_weight="balanced", random_state=42),
+        "Linear SVM": LinearSVC(C=1.0, class_weight="balanced", dual="auto", random_state=42),
     }

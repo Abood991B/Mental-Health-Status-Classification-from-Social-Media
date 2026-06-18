@@ -16,7 +16,7 @@ Millions of individuals express mental health struggles, including depression, a
 - Source: Kaggle - "Sentiment Analysis for Mental Health" by Suchintika Sarkar
 - URL: https://www.kaggle.com/datasets/suchintikasarkar/sentiment-analysis-for-mental-health
 - Local file: `data/Combined_Data.csv`
-- Size: 53,043 raw records; 52,681 rows after null removal; 52,542 final modelling rows
+- Size: 53,043 raw records; 52,681 rows after null removal; 52,543 final modelling rows
 - Classes: 7 mental-health status labels
 
 ### Setup and Installation

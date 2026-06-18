@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import joblib
@@ -8,13 +9,16 @@ import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.utils.class_weight import compute_sample_weight
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from src.evaluation import evaluate_predictions, save_confusion_matrix
 from src.feature_engineering import build_tfidf_vectorizer
 from src.models.traditional_ml import build_traditional_models
 from src.visualization import save_metric_bar
 
 
-ROOT = Path(__file__).resolve().parents[1]
 PROCESSED_DIR = ROOT / "data" / "processed"
 RESULTS_DIR = ROOT / "results"
 TABLES_DIR = RESULTS_DIR / "tables"

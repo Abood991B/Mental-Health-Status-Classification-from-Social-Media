@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from collections import Counter, defaultdict
+from collections import Counter
+import sys
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -8,11 +9,14 @@ import pandas as pd
 import seaborn as sns
 from nltk.sentiment import SentimentIntensityAnalyzer
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from src.preprocessing import ensure_nltk_resources
 from src.visualization import PALETTE, setup_style
 
 
-ROOT = Path(__file__).resolve().parents[1]
 PROCESSED_PATH = ROOT / "data" / "processed" / "cleaned_full.csv"
 TABLES_DIR = ROOT / "results" / "tables"
 SCREENSHOTS_DIR = ROOT / "results" / "screenshots"
