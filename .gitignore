@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+env/
+*.log
+models/*.pkl
+models/*.joblib
+models/*.keras
+models/*.pt
+models/transformers/
+results/cache/
+data/processed/
