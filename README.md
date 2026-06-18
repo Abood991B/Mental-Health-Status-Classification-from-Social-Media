@@ -84,7 +84,7 @@ Tables and figures are saved under `results/tables/` and `results/screenshots/`.
 
 ## Group Members
 
-- Abdulrahman Baidaq - 241UC240L7 - TT1L
+- Abdulrahman Baidaq - 241UC240L7 - TT2L
 
 ## Instructor
 
